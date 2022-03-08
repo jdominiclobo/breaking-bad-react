@@ -1,0 +1,35 @@
+/*# sourceMappingURL=CastInfo.css.map */
+
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.charCard {
+  display: flex;
+  padding: 30px;
+  margin-top: 10px;
+  height: 20vw;
+  width: 60vw;
+  justify-content: left;
+  border: 1px solid white;
+  box-shadow: 8px grey;
+  background-color: #1d5234;
+}
+
+.info {
+  padding: 60px;
+  background-color: #1d5234;
+  text-align: left;
+}
+.infoGain {
+  background-color: #1d5234;
+}
+
+.backButton {
+  margin-top: 20px;
+  height: 60px;
+  width: 100px;
+}

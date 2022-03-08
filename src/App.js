@@ -1,19 +1,21 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import CastInfo from "./components/CastInfo";
-import CastList from "./components/CastList";
+import CastInfo from "./Components/CastInfo";
+import CastList from "./Components/CastList";
+import Home from "./Components/Home/Home";
+import Navbar from "./Components/Navbar";
 
 function App() {
   // const routes = useRoutes([{ path: "/", element: <CastList /> }]);
 
   return (
     <div className="App">
-      <header>
-        <h1>Breaking Bad</h1>
-      </header>
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<CastList />} />
+        <Route path="home" element={<Home />} />
         <Route path="characters/:id" element={<CastInfo />} />
       </Routes>
     </div>

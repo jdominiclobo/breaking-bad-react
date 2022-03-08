@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../styles/CastList.css";
+import "../Styles/CastList.css";
 import { Link } from "react-router-dom";
 
 const CastList = (props) => {
@@ -29,7 +29,7 @@ const CastList = (props) => {
               <Link to={`/characters/${character.char_id}`}>
                 <img
                   alt="characterImage"
-                  style={{ height: "100%", width: "100px" }}
+                  style={{ height: "80%", width: "20rem" }}
                   src={character.img}
                 />
                 <br />

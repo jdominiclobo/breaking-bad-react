@@ -1,0 +1,24 @@
+/* # sourceMappingURL=CastList.css.map */
+
+* {
+  text-align: center;
+}
+
+.container {
+  width: fit-content;
+  display: flex;
+}
+
+.characterCard {
+  padding: 10px;
+  height: 30vw;
+}
+/* 
+.charCard {
+  padding: 30px;
+  margin-top: 10px;
+  height: 20vw;
+  width: 60vw;
+  justify-content: left;
+  border: 5px solid white;
+} */

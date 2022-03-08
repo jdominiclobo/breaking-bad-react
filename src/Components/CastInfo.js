@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "../Styles/CastInfo.css";
 
 const CastInfo = ({ props }) => {
   const [characterInfo, setCharacterInfo] = useState({});
@@ -23,23 +24,33 @@ const CastInfo = ({ props }) => {
 
   return (
     <div className="container">
-      <h1> Info </h1>
+      <div>
+        <h1>{characterInfo.name}'s info</h1>
+      </div>
+
       {Object.keys(characterInfo).length > 0 && (
-        <div className="infoPage">
+        <div className="charCard">
           <img
+            className="characterImage"
             alt="characterImage"
-            style={{ height: "100%", width: "100px" }}
+            style={{ height: "100%", width: "20rem" }}
             src={characterInfo.img}
           />
-          <span> Character name : {characterInfo.name}</span> <br />
-          <span> Birthday : {characterInfo.birthday}</span> <br />
-          <span> Occupation : {characterInfo.occupation[0]}</span> <br />
-          <span> Status : {characterInfo.status}</span> <br />
-          <span> Nickname : {characterInfo.nickname}</span> <br />
-          <span> Portrayed by : {characterInfo.portrayed}</span> <br />
+          <div className="info">
+            <span className="infoGain">
+              Character name : {characterInfo.name} <br />
+              Birthday : {characterInfo.birthday} <br />
+              Occupation : {characterInfo.occupation[0]} <br />
+              Status : {characterInfo.status} <br />
+              Nickname : {characterInfo.nickname} <br />
+              Portrayed by : {characterInfo.portrayed}
+            </span>
+          </div>
         </div>
       )}
-      <button className="backButton" onClick={() => navigate("/")}></button>
+      <div className="backButton">
+        <button onClick={() => navigate("/")}>Back</button>
+      </div>
     </div>
   );
 };
