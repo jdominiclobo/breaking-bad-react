@@ -5,7 +5,9 @@ import "../Styles/Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h2 className="title">Breaking Bad mania</h2>
+      <Link to="home" className="title">
+        Breaking Bad mania
+      </Link>
       <div className="links">
         <Link to="home" style={{ background: "none", paddingLeft: "5rem" }}>
           Home

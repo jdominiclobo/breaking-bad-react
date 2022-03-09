@@ -52,11 +52,9 @@ const CastInfo = ({ props }) => {
           </div>
         </div>
       )}
-      {/* <div className="backButton"> */}
       <button className="backButton" onClick={() => navigate("/")}>
         BACK
       </button>
-      {/* </div> */}
     </div>
   );
 };
