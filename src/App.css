@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Neonderthaw&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel:wght@600&family=Libre+Baskerville:wght@700&family=Neonderthaw&display=swap");
 
 * {
   background-color: #d9a032;
   color: white;
   text-decoration: none;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Cinzel", serif;
 }

@@ -23,7 +23,7 @@ const CastInfo = ({ props }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="container">
+    <div>
       <div>
         <h1>{characterInfo.name}'s info</h1>
       </div>
@@ -38,6 +38,7 @@ const CastInfo = ({ props }) => {
           />
           <div className="info">
             <span className="infoGain">
+              {/* use p tag */}
               Character name : {characterInfo.name} <br />
               Birthday : {characterInfo.birthday} <br />
               Occupation : {characterInfo.occupation[0]} <br />

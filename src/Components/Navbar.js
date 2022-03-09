@@ -5,7 +5,7 @@ import "../Styles/Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h1 className="title">Breaking Bad mania</h1>
+      <h2 className="title">Breaking Bad mania</h2>
     </div>
   );
 };

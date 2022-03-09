@@ -5,20 +5,20 @@
 }
 
 .container {
-  width: fit-content;
+  justify-content: center;
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .characterCard {
-  padding: 10px;
+  display: flex;
+  padding: 20px;
   height: 30vw;
+  border: px solid white;
 }
-/* 
-.charCard {
-  padding: 30px;
-  margin-top: 10px;
-  height: 20vw;
-  width: 60vw;
-  justify-content: left;
-  border: 5px solid white;
-} */
+
+.characterCard :hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
