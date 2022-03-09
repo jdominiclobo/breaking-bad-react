@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import "../Styles/CastInfo.css";
 
 const CastInfo = ({ props }) => {
@@ -25,7 +25,7 @@ const CastInfo = ({ props }) => {
   return (
     <div>
       <div>
-        <h1>{characterInfo.name}'s info</h1>
+        <h1 style={{ fontSize: "2.5rem" }}>{characterInfo.name}'s info</h1>
       </div>
 
       {Object.keys(characterInfo).length > 0 && (
@@ -33,25 +33,30 @@ const CastInfo = ({ props }) => {
           <img
             className="characterImage"
             alt="characterImage"
-            style={{ height: "100%", width: "20rem" }}
+            style={{
+              height: "80%",
+              width: "20rem",
+              border: "15px solid white",
+            }}
             src={characterInfo.img}
           />
           <div className="info">
             <span className="infoGain">
-              {/* use p tag */}
-              Character name : {characterInfo.name} <br />
-              Birthday : {characterInfo.birthday} <br />
-              Occupation : {characterInfo.occupation[0]} <br />
-              Status : {characterInfo.status} <br />
-              Nickname : {characterInfo.nickname} <br />
-              Portrayed by : {characterInfo.portrayed}
+              <p>Character name : {characterInfo.name}</p>
+              <p>Birthday : {characterInfo.birthday}</p>
+              <p>Occupation : {characterInfo.occupation[0]}</p>
+              <p>Status : {characterInfo.status}</p>
+              <p>Nickname : {characterInfo.nickname}</p>
+              <p>Portrayed by : {characterInfo.portrayed}</p>
             </span>
           </div>
         </div>
       )}
-      <div className="backButton">
-        <button onClick={() => navigate("/")}>Back</button>
-      </div>
+      {/* <div className="backButton"> */}
+      <button className="backButton" onClick={() => navigate("/")}>
+        BACK
+      </button>
+      {/* </div> */}
     </div>
   );
 };

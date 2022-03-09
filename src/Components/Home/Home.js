@@ -3,8 +3,11 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
-      <img src="./bb.jpg" />
+      <img
+        alt="home-background"
+        src="./breakingbad.png"
+        style={{ height: "100%", width: "100%" }}
+      />
     </div>
   );
 };

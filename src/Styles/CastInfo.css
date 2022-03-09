@@ -10,22 +10,48 @@
 
 .charCard {
   display: flex;
-  padding: 30px;
+  padding: 20px;
   margin-top: 10px;
   justify-content: center;
-  border: 1px solid white;
-  box-shadow: 8px grey;
+  /* border: 0px solid white; */
   background-color: #1d5234;
+  font-size: 1.5rem;
 }
 
 .info {
-  padding: 60px;
+  padding: 20px;
   margin-left: 50px;
-  /* background-color: #1d5234; */
   text-align: left;
+  border-radius: 5px;
 }
+
 .backButton {
-  margin-top: 20px;
-  height: 60px;
-  width: 100px;
+  padding-right: 120px;
+  padding-left: 70px;
+  margin-top: 30px;
+  height: 50px;
+  width: 20px;
+  cursor: pointer;
+  border: 1px solid #1d5234;
+  border-radius: 2px;
+  box-shadow: black;
+  font-size: larger;
+  background-color: #1d5234;
+}
+
+@media screen and (max-width: 754px) {
+  .container {
+    font-size: 0.5rem;
+  }
+  .charCard {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .info {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 }

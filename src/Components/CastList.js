@@ -21,7 +21,7 @@ const CastList = (props) => {
 
   return (
     <div>
-      <h1>Characters</h1>
+      <h1 style={{ fontSize: "4rem" }}>Characters</h1>
       <div className="container">
         {cast.map((character) => {
           return (
@@ -29,7 +29,11 @@ const CastList = (props) => {
               <Link to={`/characters/${character.char_id}`}>
                 <img
                   alt="characterImage"
-                  style={{ height: "80%", width: "20rem" }}
+                  style={{
+                    height: "80%",
+                    width: "20rem",
+                    border: "15px solid white",
+                  }}
                   src={character.img}
                 />
                 <br />

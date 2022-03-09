@@ -15,10 +15,29 @@
   display: flex;
   padding: 20px;
   height: 30vw;
-  border: px solid white;
+  font-size: 2rem;
 }
 
 .characterCard :hover {
   transform: scale(1.06);
   transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 392px) {
+  .characterCard {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 391px) {
+  .characterCard {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .characterCard {
+    height: 600px;
+    font-size: 1rem;
+  }
 }
