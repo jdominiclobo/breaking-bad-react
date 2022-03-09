@@ -7,16 +7,14 @@ import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar";
 
 function App() {
-  // const routes = useRoutes([{ path: "/", element: <CastList /> }]);
-
   return (
     <div className="App">
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<CastList />} />
-        <Route path="home" element={<Home />} />
-        <Route path="characters/:id" element={<CastInfo />} />
+        <Route path="/" element={<Home />} />
+        <Route path="cast" element={<CastList />} />
+        <Route path="cast/:id" element={<CastInfo />} />
       </Routes>
     </div>
   );

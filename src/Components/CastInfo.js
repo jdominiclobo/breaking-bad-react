@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "../Styles/CastInfo.css";
 
 const CastInfo = ({ props }) => {
@@ -52,7 +52,7 @@ const CastInfo = ({ props }) => {
           </div>
         </div>
       )}
-      <button className="backButton" onClick={() => navigate("/")}>
+      <button className="backButton" onClick={() => navigate("/cast")}>
         BACK
       </button>
     </div>

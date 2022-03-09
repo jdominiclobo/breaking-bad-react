@@ -26,7 +26,7 @@ const CastList = (props) => {
         {cast.map((character) => {
           return (
             <div className="characterCard" key={character.char_id}>
-              <Link to={`/characters/${character.char_id}`}>
+              <Link to={`/cast/${character.char_id}`}>
                 <img
                   alt="characterImage"
                   style={{

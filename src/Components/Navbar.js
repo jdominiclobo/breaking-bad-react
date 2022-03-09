@@ -5,14 +5,17 @@ import "../Styles/Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Link to="home" className="title">
+      <Link to="/" className="title">
         Breaking Bad mania
       </Link>
       <div className="links">
-        <Link to="home" style={{ background: "none", paddingLeft: "5rem" }}>
-          Home
-        </Link>
-        <Link to="/" style={{ background: "none", paddingLeft: "2rem" }}>
+        <Link
+          to="/cast"
+          style={{
+            background: "none",
+            paddingLeft: "3rem",
+          }}
+        >
           Characters
         </Link>
       </div>

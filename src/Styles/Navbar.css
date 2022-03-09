@@ -48,4 +48,10 @@
   .title {
     font-size: 1.4rem;
   }
+  .links {
+    margin: 0.2rem;
+    margin-right: 50px;
+    /* display: flex;
+    flex-direction: column; */
+  }
 }
