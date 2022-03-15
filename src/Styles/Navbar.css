@@ -1,9 +1,9 @@
 .navbar {
   background: #1d5234;
   height: 100px;
-  width: 115%;
+  width: 100%;
   display: flex;
-  /* justify-content: center; */
+  align-self: stretch;
   align-items: center;
   position: sticky;
   top: 0;
@@ -11,47 +11,65 @@
 }
 
 .title {
-  margin-left: 50px;
   background-color: #1d5234;
-  font-size: 3rem;
   justify-content: flex-start;
 }
 
 .links {
   background: #1d5234;
+  font-size: 3rem;
+  background: none;
+  padding-left: 1.5rem;
 }
 
-@media screen and (max-width: 393px) {
-  .title {
-    font-size: 1rem;
-  }
-  .links {
-    margin: 0.2rem;
+@media screen and (min-width: 1024px) {
+  .navbar {
+    width: 100%;
     display: flex;
-    flex-direction: column;
   }
 }
-
-@media screen and (min-width: 725px) and (max-width: 1023px) {
-  .title {
-    font-size: 1.7rem;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    width: 100%;
+    display: flex;
   }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1024px) {
   .title {
+    margin-left: 50px;
     font-size: 3rem;
   }
+  .links {
+    margin: 1rem;
+    font-size: 1rem;
+  }
 }
-
-@media screen and (min-width: 394px) and (max-width: 768px) {
+@media screen and (min-width: 667px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-self: stretch;
+  }
   .title {
-    font-size: 1.4rem;
+    margin-left: 30px;
+    font-size: 2rem;
   }
   .links {
-    margin: 0.2rem;
-    margin-right: 50px;
-    /* display: flex;
-    flex-direction: column; */
+    margin: 0.1rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+  }
+  .title {
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+  .links {
+    margin: 0.1rem;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
   }
 }

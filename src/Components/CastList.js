@@ -21,7 +21,7 @@ const CastList = (props) => {
 
   return (
     <div>
-      <h1 style={{ fontSize: "4rem" }}>Characters</h1>
+      <h1>Characters</h1>
       <div className="container">
         {cast.map((character) => {
           return (

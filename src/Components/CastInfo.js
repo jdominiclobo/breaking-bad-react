@@ -25,7 +25,7 @@ const CastInfo = ({ props }) => {
   return (
     <div>
       <div>
-        <h1 style={{ fontSize: "2.5rem" }}>{characterInfo.name}'s info</h1>
+        <h1>{characterInfo.name}'s info</h1>
       </div>
 
       {Object.keys(characterInfo).length > 0 && (

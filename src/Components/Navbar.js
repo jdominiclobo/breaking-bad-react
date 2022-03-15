@@ -4,7 +4,7 @@ import "../Styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Link to="/" className="title">
         Breaking Bad mania
       </Link>
@@ -19,7 +19,7 @@ const Navbar = () => {
           Characters
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Navbar;
