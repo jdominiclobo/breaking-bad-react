@@ -3,15 +3,27 @@ import axios from "axios";
 import "../Styles/CastList.css";
 import { Link } from "react-router-dom";
 
-const CastList = (props) => {
-  const [cast, setCast] = useState([]);
+type CharactersType = {
+  char_id: number;
+  name: string;
+  birthday: string;
+  occupation: string[];
+  img: string;
+  status: string;
+  appearance: number[];
+  nickname: string;
+  portrayed: string;
+};
+
+const CastList = () => {
+  const [cast, setCast] = useState<CharactersType[] | []>([]);
 
   useEffect(() => {
     axios
       .get("https://www.breakingbadapi.com/api/characters")
       .then((response) => {
         const result = response.data;
-        console.log(result);
+        console.log("cast list", result);
         setCast(result);
       })
       .catch((error) => {
